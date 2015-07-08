@@ -1,0 +1,22 @@
+<html lang='en'>
+<head>
+  <title>Mean/Rails - Login</title>
+  <meta charset='UTF-8'>
+  <meta name='description' content='Rails MEAN login registration chat'>
+  <meta name="author" content="Shain Lafazan">
+</head>
+<body>
+  <div class='container'>
+    <h1>Welcome to the Rails MEAN Chat :)</h1>
+      
+      
+
+      <%= render 'registerForm' %>
+
+      <%= render 'loginForm' %>
+      <% if flash[:notice] %>
+        <div class="error"><%= flash[:notice] %></div>
+      <% end %>
+  </div>
+</body>
+</html>
